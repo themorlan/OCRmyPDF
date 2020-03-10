@@ -3,7 +3,7 @@
 FROM arm32v7/ubuntu:19.04 as base
 
 FROM base as builder
-COPY qemu-arm-static* /usr/bin
+COPY qemu-arm-static /usr/bin
 ENV LANG=C.UTF-8
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
