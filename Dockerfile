@@ -19,6 +19,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   unpaper \
   wget \
   git \
+  curl \
   libffi-dev \
   libqpdf-dev \
   libxml2-dev \
