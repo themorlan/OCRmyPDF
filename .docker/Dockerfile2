@@ -1,7 +1,7 @@
 # OCRmyPDF
 #
 FROM arm32v7/ubuntu:19.04 as base
-
+COPY qemu-arm-static /usr/bin
 FROM base as builder
 
 ENV LANG=C.UTF-8
