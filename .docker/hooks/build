@@ -2,6 +2,6 @@
 
 echo "Build hook running"
 docker build \
-             --file "${DOCKERFILE_PATH}"\
+             --file ".docker/Dockerfile2"\
              --tag "$IMAGE_NAME" \
              .
