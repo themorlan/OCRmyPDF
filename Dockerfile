@@ -28,7 +28,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Needs libleptonica-dev, zlib1g-dev
 RUN \
   mkdir jbig2 \
-  && wget -q https://github.com/agl/jbig2enc/archive/0.29.tar.gz -O - | \
+  && curl -L https://github.com/agl/jbig2enc/archive/0.29.tar.gz | \
   tar xz -C jbig2 --strip-components=1 \
   && cd jbig2 \
   && ./autogen.sh && ./configure && make && make install \
