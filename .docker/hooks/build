@@ -1,7 +1,1 @@
-#!/bin/bash
 
-echo "Build hook running"
-docker build \
-             --file ".docker/Dockerfile2"\
-             --tag "$IMAGE_NAME" \
-             .
